@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - GreenyGrocery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #8BC34A;
+            --dark-color: #2E7D32;
+            --light-color: #F1F8E9;
+            --accent-color: #FF9800;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            padding-top: 76px;
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--primary-color) !important;
+        }
+        
+        .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-color);
+            border-color: var(--dark-color);
+        }
+        
+        .page-header {
+            background-color: var(--light-color);
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        
+        .team-member {
+            margin-bottom: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-member img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid var(--light-color);
+        }
+        
+        .milestone {
+            text-align: center;
+            padding: 30px 15px;
+            background-color: var(--light-color);
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .milestone-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .cta-section {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="websitehomepage.html">
+                    <img src="rodolfo-quevenco-BldLTKHFmXg-unsplash.jpg" alt="GreenGrocer Logo" width="30" height="30" class="d-inline-block align-top me-2">
+                    GreenyGrocery
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="websitehomepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="subscription.html">Subscriptions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="fw-bold">About GreenyGrocery</h1>
+                        <p class="lead">Connecting local farmers with conscious consumers since 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="denny-rodriguez-yyxKzgXSjpo-unsplash.jpg" class="img-fluid rounded" alt="Our farm">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">Our Story</h2>
+                        <p>GreenyGrocery started with a simple idea: to make fresh, locally grown produce accessible to everyone while supporting sustainable farming practices and local communities.</p>
+                        <p>Founded in 2023 by a group of passionate food lovers and environmental advocates, we recognized the disconnect between consumers and the source of their food. We saw an opportunity to bridge this gap by creating a direct farm-to-table service that benefits both consumers and local farmers.</p>
+                        <p>What began as a small operation serving just 50 families in our local neighborhood has now grown into a thriving community-supported business delivering thousands of boxes of fresh produce weekly across the region.</p>
+                        <p>Despite our growth, our mission remains the same: to provide the freshest, most nutritious produce while promoting sustainable agriculture and supporting local farmers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission & Values -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Mission & Values</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="value-icon">
+                                    <i class="bi bi-tree"></i>
+                                </div>
+                                <h3 class="card-title">Sustainability</h3>
+                                <p class="card-text">We're committed to environmentally friendly practices throughout our operations, from supporting organic farming to using minimal packaging.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="value-icon">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <h3 class="card-title">Community</h3>
+                                <p class="card-text">We believe in strengthening local food systems and creating meaningful connections between farmers and consumers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="value-icon">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <h3 class="card-title">Health</h3>
+                                <p class="card-text">We're passionate about providing nutritious food options that promote wellbeing and encourage healthy eating habits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Team -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Meet Our Team</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-member">
+                            <img src="marek-mucha-bx_epRVS9vg-unsplash.jpg" alt="Emma Wilson">
+                            <h4>Emma Wilson</h4>
+                            <p class="text-muted">Founder & CEO</p>
+                            <p>Former organic farmer with a passion for sustainable agriculture and food systems.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-member">
+                            <img src="graham-hunt-SJtZSi_sNTc-unsplash.jpg" alt="David Chen">
+                            <h4>David Chen</h4>
+                            <p class="text-muted">Operations Manager</p>
+                            <p>Logistics expert ensuring your produce arrives fresh and on time.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-member">
+                            <img src="marek-mucha-tFRLRfBoe9I-unsplash.jpg" alt="Sarah Johnson">
+                            <h4>Sarah Johnson</h4>
+                            <p class="text-muted">Farm Relations</p>
+                            <p>Works directly with our network of local farmers to source the best produce.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-member">
+                            <img src="jonas-jaeken-5g7tSrQSJEo-unsplash.jpg" alt="Michael Torres">
+                            <h4>Michael Torres</h4>
+                            <p class="text-muted">Nutritionist</p>
+                            <p>Helps design our boxes to provide balanced, seasonal nutrition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Impact -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Impact</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="milestone">
+                            <div class="milestone-number">25+</div>
+                            <p>Local farms supported</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="milestone">
+                            <div class="milestone-number">5,000+</div>
+                            <p>Customers served weekly</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="milestone">
+                            <div class="milestone-number">75%</div>
+                            <p>Reduced food miles</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="milestone">
+                            <div class="milestone-number">30+</div>
+                            <p>Tons of packaging saved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Partners -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Partners</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="text-center mb-5">We're proud to work with these organizations that share our commitment to sustainability and community wellbeing:</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>Local Farmers Association</h5>
+                                <p class="text-muted">Supporting sustainable farming practices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>Green Earth Initiative</h5>
+                                <p class="text-muted">Environmental conservation partner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>Community Food Bank</h5>
+                                <p class="text-muted">Helping fight food insecurity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>Healthy Schools Program</h5>
+                                <p class="text-muted">Providing nutrition education</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section text-center">
+            <div class="container">
+                <h2 class="mb-4">Join Our Mission for Sustainable Food</h2>
+                <p class="lead mb-4">Experience the difference of fresh, local produce while supporting your community.</p>
+                <a href="services.html" class="btn btn-light btn-lg">START YOUR SUBSCRIPTION</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>GreenyGrocery</h5>
+                    <p>Connecting local farmers with conscious consumers since 2023.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get updates on new products and seasonal offerings.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0">&copy; 2025 GreenyGrocery. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Privacy Policy | Terms of Service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
